@@ -1,8 +1,10 @@
 const express = require('express');
 const routes = express.Router();
 
-const OngController = require('./controllers/ongController')
-const IncidentController = require('./controllers/incidentController')
+const OngController = require('./controllers/ongController');
+const IncidentController = require('./controllers/incidentController');
+const ProfileController = require('./controllers/profileController');
+const SessionController = require('./controllers/sessionController');
 
 // Rotas da aplicacao 
 // Recurso: algo que queremos buscar na aplicacao
@@ -46,11 +48,19 @@ routes.post ('/ongs', OngController.create);
 
 // INCIDENTS
 // rota de listar os incidentes do banco de dados
+// essa rota traz todos os incidentes contidos no banco, independente do id da ong
 routes.get('/incidents', IncidentController.index);
 // rota de cadastrar um incidente
 routes.post('/incidents', IncidentController.create);
 // rota de apagar um incidente por seu id
 routes.delete('/incidents/:id', IncidentController.delete);
+
+// PROFILE
+// traz todos os incidentes de determinada ong de acordo com o id passado no header da requisicao
+routes.get('/profile', ProfileController.index);
+
+// SESSAO
+routes.post('/sessions', SessionController.create);
 
 // exporta a variavel do arquivo
 module.exports = routes;
