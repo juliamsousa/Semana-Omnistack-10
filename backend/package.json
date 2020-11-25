@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "prod": "node src/index.js"
+
   },
   "author": "RocketSeat - Julia Miranda",
   "license": "ISC",
