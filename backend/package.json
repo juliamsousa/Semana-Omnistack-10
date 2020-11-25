@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Site de cadastro de ongs incidentes que precisam de atencao.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js"
+    "start": "node src/index.js"
   },
-  "author": "",
+  "author": "RocketSeat - Julia Miranda",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
@@ -17,5 +17,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
+  },
+  "engines": {
+    "node": "14.15.1"
   }
 }
