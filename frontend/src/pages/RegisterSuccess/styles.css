@@ -1,0 +1,90 @@
+.logon-success-container {
+    width: 100vw;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex; 
+    flex-direction: column;
+    /* alinha verticalmente */
+    align-items: center;
+    /* alinha horizontalmente */
+    justify-content: center;
+}
+
+.logon-success-container .successImg {
+    width: 30vw;
+    height: 10vw;
+    /* padding-bottom: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logon-success-container .successImg img{
+    width: 70%;
+    height: 70%; 
+}
+
+.logon-success-container .navigation {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logon-success-container .navigation h1 {
+    padding-bottom: 3%;
+    font-size: 30px;
+}
+
+.logon-success-container .navigation .message {
+    font-size: 20px;
+    color: #737380;
+    padding-bottom: 3%;
+    width: 55%;
+
+    /* faz o alinhamento do texto ao centro */
+    /* fica mais agradavel do que o texto todo justificado */
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* da o espaçamento entre o campo do id e os outros elementos */
+.logon-success-container .navigation .exibe-id {
+    padding: 3%;
+    display: flex;
+}
+
+/* botao de copiar o id da ong */
+.logon-success-container .navigation .exibe-id .copyButton {
+    border: none;
+    padding-left: 3%;
+    /* determina um tempo de transiçao para suavizar o hover */
+    transition: opacity 0.2s;
+}
+
+.logon-success-container .navigation .exibe-id .copyButton:hover {
+    opacity: 0.8;
+}
+
+/* input que exibe o id da ong */
+.logon-success-container .navigation .input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    height: 7vh;
+    border: 1px solid #000;
+
+    /* padding interno */
+    padding: 0 24px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.logon-success-container .button {
+    width: 30%;
+}

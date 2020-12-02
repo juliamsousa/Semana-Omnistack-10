@@ -33,9 +33,9 @@ export default function Register() {
             // envia os dados para a api, que envia-os no formato json para o backend
             const response = await api.post('ongs', data);
             // data contem os dados da resposta
-            alert( `Seu ID de acesso: ${response.data.id}`);
+            // alert( `Seu ID de acesso: ${response.data.id}`);
             // apos o cadastro redireciona o usuario para a pagina raiz de Logon
-            history.push('/');
+            history.push('/register-success');
         }
             catch (error) {
                 alert('Erro no cadastro, tente novamente :(');
